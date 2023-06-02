@@ -7,3 +7,16 @@
 .squareDiv {
 	border: 1px solid black;
 }
+.button {
+	display: block;
+	margin: 80px auto 10px;
+	padding: 10px 30px;
+	background-color: rgb(80, 80, 250);
+	color: white;
+	font-weight: bold;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+.button:hover {
+	cursor: pointer;
+}
