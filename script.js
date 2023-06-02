@@ -3,6 +3,10 @@ const setSizeButton = document.querySelector('.button');
 const containerWidth = 480;
 let num = 16;
 
+const randColor = () =>  {
+	return "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0').toUpperCase();
+}
+
 function createGrid(num) {
 	for (let i = 0; i < num * num; i++) {
 		let div = document.createElement('div');
@@ -15,7 +19,7 @@ function createGrid(num) {
 createGrid(num);
 
 container.addEventListener('mouseover', event => {
-	event.target.style.backgroundColor = 'violet';
+	event.target.style.backgroundColor = randColor();
 });
 
 setSizeButton.addEventListener('click', () => {
