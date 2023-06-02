@@ -1,0 +1,9 @@
+.container {
+	width: 480px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.squareDiv {
+	border: 1px solid black;
+}
